@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio - Tamim Ahmed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+
+
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+
+  <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar starts -->
+
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--<button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>-->
+      <!-- Dark Mode Toggle Button -->
+
+      <style>
+        body {
+          padding: 0% 3% 10% 3%;
+          text-align: center;
+        }
+
+        h1 {
+          color: #32a852;
+          margin-top: 30px;
+        }
+
+        button {
+          cursor: pointer;
+          border: 1px solid #555;
+          text-align: center;
+          padding: 5px;
+          margin-left: 8px;
+        }
+
+        .dark {
+          background-color: #222;
+          color: #e6e6e6;
+        }
+      </style>
+      </head>
+
+      <body>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block bg-secondary" onclick="myFunction()"
+          aria-label="Toggle dark mode">
+          <i id="theme-icon" class="bi bi-moon"></i> Dark mode
+        </button>
+
+
+        <script>
+          function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+          }
+        </script>
+
+    </div>
+  </nav>
+
+  <!-- navbar ends here -->
+
+
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-middle">
+      <!-- here data-aos is used for adding aos animation  -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d"> 
+          Hello! I Am <br /><span class="c-orange">Tamim Ahmed</span>
+        </h2>
+        <p class="text-muted">
+          I am a programmer and designer with expertise in creating functional and visually appealing digital
+          experiences. With a strong background in [your programming languages, e.g., JavaScript, Python, C++] and [your
+          design tools, e.g., Figma, Adobe XD, Photoshop], I specialize in building [web applications, mobile apps,
+          UI/UX designs, etc.] that combine efficiency with creativity.
+        </p>
+        <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill bg-success">
+          Hire Me
+        </button>
+        <a href="" class="link ms-4 d-none">See My Work</a>
+      </div>
+
+      <div class="col-10 col-md-4 d-none d-md-block image-container">
+        <div class="image-wrapper">
+          <img src="images/MyPic.jpg" class="img-fluid hover-effect" alt="" />
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>My Expertise</small>
+      <h3>
+        Provide Wide Range of <br />
+        Digital Services
+      </h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Web Design</h4>
+            <p class="text-muted">
+              Web design is the process of creating the visual and interactive aspects of a website, focusing on the user experience (UX) and user interface (UI). It involves planning, ideating, and creating the structure, layout, and aesthetic appeal of web pages, considering factors like graphics, colors, fonts, and interactive elements. 
+              Pain must be repelled, but in times of certain duties, due to the deaths of things, I will forgive the smallest of sins.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Web Development</h4>
+            <p class="text-muted">
+              Web design is the process of creating the visual and interactive aspects of a website, focusing on the user experience (UX) and user interface (UI). It involves planning, ideating, and creating the structure, layout, and aesthetic appeal of web pages, considering factors like graphics, colors, fonts, and interactive elements. 
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Debugging</h4>
+            <p class="text-muted">
+              Debugging is the process of finding and fixing errors, also known as bugs, in software code. It involves identifying, isolating, and resolving issues that cause the program to behave unexpectedly or malfunction. Debugging ensures that software functions correctly and reliably, fulfilling its intended purpose. 
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- Problem skil part -->
+
+<!-- Add this section where you want your problem-solving skills to appear -->
+<section class="problem-solving mt-5 py-5" id="problem-solving">
+  <div class="container">
+    <div class="heading text-center">
+      <small>Problem Solving</small>
+      <h3>My Competitive Programming & Problem Solving Skills</h3>
+    </div>
+
+    <div class="row mt-5">
+      <!-- Coding Profiles -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="coding-profiles p-4 rounded-3 shadow-sm">
+          <h4 class="mb-4">Coding Profiles</h4>
+          <div class="profile-list">
+            <div class="profile-item d-flex align-items-center mb-3 p-3 rounded-3">
+              <img src="https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png" alt="CodeChef" class="profile-logo me-3" width="40">
+              <div class="profile-info flex-grow-1">
+                <h5 class="mb-1">CodeChef</h5>
+                <p class="mb-1">Rating: 1650 (3-star)</p>
+                <a href="https://www.codechef.com/users/tamim_15" target="_blank" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+            
+            <div class="profile-item d-flex align-items-center mb-3 p-3 rounded-3">
+              <img src="https://codeforces.org/s/0/favicon-32x32.png" alt="Codeforces" class="profile-logo me-3" width="40">
+              <div class="profile-info flex-grow-1">
+                <h5 class="mb-1">Codeforces</h5>
+                <p class="mb-1">Rating: 1420 (Specialist)</p>
+                <a href="https://codeforces.com/profile/Tamim_Ahmed" target="_blank" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+            
+            <div class="profile-item d-flex align-items-center mb-3 p-3 rounded-3">
+              <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="LeetCode" class="profile-logo me-3" width="40">
+              <div class="profile-info flex-grow-1">
+                <h5 class="mb-1">LeetCode</h5>
+                <p class="mb-1">Solved 150+ problems</p>
+                <a href="https://leetcode.com/u/Tamim_11/" target="_blank" class="btn btn-sm btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills & Achievements -->
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <div class="skills-achievements p-4 rounded-3 shadow-sm h-100">
+          <h4 class="mb-4">Skills & Achievements</h4>
+          
+          <div class="skill-category mb-4">
+            <h5>Data Structures</h5>
+            <div class="progress mb-2" style="height: 10px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          
+          <div class="skill-category mb-4">
+            <h5>Algorithms</h5>
+            <div class="progress mb-2" style="height: 10px;">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          
+          <div class="skill-category mb-4">
+            <h5>Problem Solving</h5>
+            <div class="progress mb-2" style="height: 10px;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          
+          <div class="achievements mt-4">
+            <h5>Notable Achievements</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-trophy-fill text-warning me-2"></i>
+                <span>Solved 500+ problems across platforms</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-award-fill text-primary me-2"></i>
+                <span>Top 10% in CodeChef Long Challenge</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-star-fill text-success me-2"></i>
+                <span>3-star rating on CodeChef</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Problem Solver -->
+    <div class="interactive-solver mt-5 p-4 rounded-3 shadow-sm" data-aos="fade-up">
+      <h4 class="text-center mb-4">Try My Problem Solver</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="problem-selector mb-4">
+            <label for="problem-select" class="form-label">Select a Problem Type:</label>
+            <select class="form-select" id="problem-select">
+              <option value="twosum">Two Sum</option>
+              <option value="fibonacci">Fibonacci Sequence</option>
+              <option value="binarysearch">Binary Search</option>
+            </select>
+          </div>
+          
+          <div id="problem-description" class="mb-4 p-3 bg-light rounded-3">
+            <h5>Two Sum Problem</h5>
+            <p>Given an array of integers and a target value, find two numbers such that they add up to the target.</p>
+            <p><strong>Example:</strong> Input: [2,7,11,15], Target: 9 → Output: [0,1]</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="solver-interface">
+            <div class="input-group mb-3">
+              <span class="input-group-text">Input Array</span>
+              <input type="text" id="input-array" class="form-control" placeholder="e.g. 2,7,11,15">
+            </div>
+            
+            <div class="input-group mb-3">
+              <span class="input-group-text">Target</span>
+              <input type="number" id="input-target" class="form-control" placeholder="e.g. 9">
+            </div>
+            
+            <button id="solve-btn" class="btn btn-primary w-100 mb-3">Solve Problem</button>
+            
+            <div id="solution-output" class="p-3 bg-light rounded-3" style="min-height: 100px;">
+              <h5>Solution Output</h5>
+              <div id="output-result" class="mt-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Problem Solving Section Styles */
+  .problem-solving {
+    background-color: #f8f9fa;
+  }
+  
+  .coding-profiles, .skills-achievements, .interactive-solver {
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .coding-profiles:hover, .skills-achievements:hover, .interactive-solver:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  .profile-item {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+  }
+  
+  .profile-logo {
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  
+  .skill-category h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #solution-output {
+    transition: all 0.3s ease;
+  }
+  
+  /* Animation for solution output */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+</style>
+
+<script>
+ 
+</script>
+
+     <!-- skill section starts -->
+<section class="skill mt-5 py-5" id="about">
+  <div class="row justify-content-evenly align-items-center">
+    <!-- Left Side (Your existing content) -->
+    <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+      <div class="heading mt-5 mt-md-3">
+        <small class="text-uppercase text-primary fw-bold">My Skills</small>
+        <h2 class="mt-3">Beautiful & Unique Digital Experiences</h2>
+        <p class="text-muted mt-4">
+          Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
+          aliquid exrea commodi consequatur magni dolores aos qui ratione
+          voluptatem nesciunt.
+        </p>
+        <p class="text-muted">
+          Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
+          consequntar magni dolores.
+        </p>
+        
+        <button class="btn btn-primary btn-lg mt-4 px-4 py-3 rounded-pill ">
+          <a href="./MyCv1.pdf" download="MyCv1.pdf"
+            class="text-white text-decoration-none">
+            Download CV <i class="fas fa-download ms-2"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Side (New Skills Progress) -->
+    <div class="col-10 col-md-5 skill-progress" data-aos="slide-right">
+      <div class="row g-4">
+        <!-- HTML/CSS -->
+        <div class="col-6">
+          <div class="skill-card text-center">
+            <div class="progress-circle progress-75">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke="#4a6bff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <span class="progress-text">75%</span>
+            </div>
+            <h6 class="mt-3 fw-bold">HTML & CSS</h6>
+          </div>
+        </div>
+        
+        <!-- JavaScript -->
+        <div class="col-6">
+          <div class="skill-card text-center">
+            <div class="progress-circle progress-85">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke="#ff6b6b" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <span class="progress-text">85%</span>
+            </div>
+            <h6 class="mt-3 fw-bold">JavaScript</h6>
+          </div>
+        </div>
+        
+        <!-- PHP -->
+        <div class="col-6">
+          <div class="skill-card text-center">
+            <div class="progress-circle progress-95">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke="#6b66ff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <span class="progress-text">95%</span>
+            </div>
+            <h6 class="mt-3 fw-bold">PHP</h6>
+          </div>
+        </div>
+        
+        <!-- ReactJS -->
+        <div class="col-6">
+          <div class="skill-card text-center">
+            <div class="progress-circle progress-97">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke="#4dd0e1" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <span class="progress-text">97%</span>
+            </div>
+            <h6 class="mt-3 fw-bold">ReactJS</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Skill Section Styles */
+  .skill {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skill::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(74,107,255,0.1) 0%, rgba(74,107,255,0) 70%);
+    z-index: 0;
+  }
+  
+  /* Progress Circle Styles */
+  .progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  
+  .progress-ring-circle {
+    transition: stroke-dashoffset 0.5s ease;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 326.56;
+    stroke-dashoffset: 326.56;
+  }
+  
+  .progress-75 .progress-ring-circle {
+    stroke-dashoffset: calc(326.56 - (326.56 * 75) / 100);
+  }
+  
+  .progress-85 .progress-ring-circle {
+    stroke-dashoffset: calc(326.56 - (326.56 * 85) / 100);
+  }
+  
+  .progress-95 .progress-ring-circle {
+    stroke-dashoffset: calc(326.56 - (326.56 * 95) / 100);
+  }
+  
+  .progress-97 .progress-ring-circle {
+    stroke-dashoffset: calc(326.56 - (326.56 * 97) / 100);
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .skill-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  }
+  
+  /* Button Styles */
+  .custom-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .custom-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .custom-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .custom-btn:hover::after {
+    transform: translateX(0);
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Animate progress circles when section comes into view
+  const skillSection = document.querySelector('.skill');
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      const circles = document.querySelectorAll('.progress-ring-circle');
+      circles.forEach(circle => {
+        const value = circle.parentElement.parentElement.classList[1].split('-')[1];
+        circle.style.transition = 'stroke-dashoffset 1.5s ease-out';
+        circle.style.strokeDashoffset = `calc(326.56 - (326.56 * ${value}) / 100)`;
+      });
+      observer.unobserve(skillSection);
+    }
+  }, { threshold: 0.2 });
+  
+  observer.observe(skillSection);
+});
+</script>
+
+
+  <!-- Problem Solving Skill Section -->
+  <section class="problem-solving mt-5 py-5">
+    <div class="heading text-center">
+      <small>Problem Solving</small>
+      <h3>Competitive Programming Profiles</h3>
+    </div>
+    <div class="row justify-content-evenly mt-4">
+      <!-- Beecrowd Profile -->
+      <div class="col-10 col-md-3 text-center" data-aos="fade-up">
+        <a href="https://judge.beecrowd.com/en/profile/688537" class="btn btn-primary btn-lg w-100 mb-3"
+          target="_blank">Beecrowd Profile</a>
+        <div class="badges mt-2">
+          <span class="badge bg-success">Top 20%</span>
+          <span class="badge bg-warning">100+ Problems</span>
+        </div>
+      </div>
+      <!-- Codeforces Profile -->
+      <div class="col-10 col-md-3 text-center" data-aos="fade-up">
+        <a href="https://codeforces.com/profile/Tamim_Ahmed" class="btn btn-primary btn-lg w-100 mb-3"
+          target="_blank">Codeforces Profile</a>
+        <div class="badges mt-2">
+          <span class="badge bg-success">Expert</span>
+          <span class="badge bg-info">260+ Problems</span>
+        </div>
+      </div>
+      <!-- CodeChef Profile -->
+      <div class="col-10 col-md-3 text-center" data-aos="fade-up">
+        <a href="https://www.codechef.com/users/tamim_15" class="btn btn-primary btn-lg w-100 mb-3"
+          target="_blank">CodeChef Profile</a>
+        <div class="badges mt-2">
+          <span class="badge bg-success">2-Star Coder</span>
+          <span class="badge bg-danger">150+ Problems</span>
+        </div>
+      </div>
+      <!-- LeetCode Profile -->
+      <div class="col-10 col-md-3 text-center" data-aos="fade-up">
+        <a href="https://leetcode.com/u/Tamim_11/" class="btn btn-primary btn-lg w-100 mb-3" target="_blank">LeetCode
+          Profile</a>
+        <div class="badges mt-2">
+          <span class="badge bg-success">Top 10%</span>
+          <span class="badge bg-primary">100+ Problems</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Problem Solving Skill Section Ends -->
+
+  <!-- portfolio section starts here -->
+  <section class="portfolio" id="portfolio">
+    <div class="heading text-center pt-5">
+      <small>Creative Work</small>
+      <h3>Check My Portfolio</h3>
+    </div>
+
+    <div id="myBtnContainer" class="text-center mt-4">
+      <!-- here we will create custom attribute using data- for filtering -->
+      <button class="filter-item" data-filter="all">All</button>
+      <button class="filter-item" data-filter="game">Game</button>
+      <button class="filter-item" data-filter="webapp">Web App</button>
+      <button class="filter-item" data-filter="website">Website</button>
+      <button class="filter-item" data-filter="brand">Brand</button>
+    </div>
+    <div class="portfolio-body">
+      <div class="row justify-content-evenly px-4">
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/2048game.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">2048 Game</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+              <a href="#" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/currency-converter.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Converter App</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/dictionary.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Dictionary</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">WebApp</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4 px-4">
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/piceditor.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">PicEditor App</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/tictactoe.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">TicTacToe Game</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/lang-translator.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Lang Translator</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio section ends here -->
+
+  <!-- testimonial section starts  -->
+  <section class="testimonial mt-5 pt-5" id="testimonial">
+    <div class="row justify-content-evenly">
+      <div class="col-md-4 col-10" data-aos="slide-right">
+        <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+        <div class="heading">
+          <small>Testimonials</small>
+          <h3>Happy Clients Feedback</h3>
+          <!-- here we will use carousel element from bootstrap -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                       Raju:
+                      Thank you for your clear direction during the meeting. Your feedback regarding the overall project flow and feature set was extremely helpful in aligning the development with your expectations. We’ve taken note of your request to simplify the user registration process and ensure better mobile responsiveness. We also appreciate the documentation you provided—this will guide us in the upcoming development phases.
+                    </p>
+                    <h4>Tamim Ahmed</h4>
+                    <small class="fs-6 text-muted">CEO of Company</small>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                    Rana :
+                      Your attention to detail on the interface design was much appreciated. The suggestions regarding whitespace, font hierarchy, and consistent button styles will enhance the visual appeal of the site. We’ve started implementing your feedback, including improving the header section and ensuring a smoother scrolling experience. Your idea to add subtle animations for user engagement is also being explored.
+                    </p>
+                    <h4>Tamim Ahmed</h4>
+                    <small class="fs-6 text-muted">CEO of Company</small>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      Your insights on content strategy, layout, and SEO optimization were very constructive. We’ve added your keyword suggestions and have started restructuring the service pages to improve readability and flow. The idea of including client testimonials and case studies on the homepage will help build trust and credibility, and we plan to mock up those sections shortly.
+                    </p>
+                    <h4>Tamim Ahmed</h4>
+                    <small class="fs-6 text-muted">CEO of Company</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="nextprev-btn rounded-pill prev-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill prev"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="nextprev-btn rounded-pill next-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <i class="bi bi-arrow-right-circle-fill next"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial ends here -->
+
+
+
+  <!-- blog section starts -->
+  <section class="blog mt-5 pb-5" id="blog">
+    <div class="heading text-center pt-5">
+      <small>Latest News</small>
+      <h3>Blog & Articles</h3>
+    </div>
+    <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+      <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+        <div class="card">
+          <img src="images/2048game.png" class="card-img-top rounded-4" alt="..." />
+          <div class="card-body px-4">
+            <small>By Tamim Ahmed</small><span class="ms-3">Mar 8,2025</span>
+            <h4 class="card-title">
+              <a href=""> Title: “Mastering the Art of Focus in a Distracted World</a>
+            </h4>
+            <p class="text-muted">
+              Summary:
+              In today’s fast-paced, notification-filled environment, focus is becoming a rare and valuable skill. This blog explores practical techniques to strengthen concentration, manage distractions, and build mental clarity—whether you're a student, professional, or creative.
+              
+              Key Points:
+              
+              The science of attention and why it’s declining
+              
+              Practical focus-building habits (Pomodoro, digital detox, mindfulness)
+              
+              How to design your environment for deep work
+              
+              Real-world stories of individuals who’ve mastered focus
+            </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+        <div class="card">
+          <img src="images/currency-converter.png" class="card-img-top rounded-4" alt="..." />
+          <div class="card-body px-4">
+            <small>By Tamim Ahemd</small><span class="ms-3">Mar 8,2022</span>
+            <h4 class="card-title">
+              <a href=""> Title: “Why Every 20-Something Should Build a Personal Brand”</a>
+            </h4>
+            <p class="text-muted">
+              Summary:
+              Personal branding isn’t just for influencers and CEOs—it’s for anyone who wants to take control of their career and online identity. This article breaks down how to build a brand that reflects your values, voice, and vision, especially in your early career.
+              
+              Key Points:
+              
+              What a personal brand actually is
+              
+              The power of storytelling and authenticity
+              
+              How to get started with LinkedIn, blogging, and a personal website
+              
+              Mistakes to avoid when building your online presence
+            </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+        <div class="card">
+          <img src="images/dictionary.png" class="card-img-top rounded-4" alt="..." />
+          <div class="card-body px-4">
+            <small>By Tamim Ahmed</small><span class="ms-3">Mar 8,2025</span>
+            <h4 class="card-title">
+              <a href="">Title: “The Rise of AI: Should We Be Worried or Excited?”</a>
+            </h4>
+            <p class="text-muted">
+              Summary:
+AI is evolving rapidly, impacting everything from our jobs to our daily routines. This piece provides a balanced look at both the promises and the concerns surrounding AI, and how we can stay informed and prepared for the changes ahead.
+
+Key Points:
+
+Major breakthroughs in AI and what they mean
+
+The impact of AI on work, education, and creativity
+
+Ethical concerns and the need for regulation
+
+How individuals can adapt and upskill in an AI-driven world
+            </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- here we will make modals if Read more link is clicked the modal will popup -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i
+                class="bi bi-x-circle-fill"></i></button>
+
+            <div class="modal-body px-4">
+              <div class="img">
+                <img src="images/2048game.png" class="img-fluid" alt="">
+              </div>
+              <div class="content mt-3">
+                <small>By Pawan Kumavat</small><span class="text-muted ms-2">Mar 8,2022</span>
+                <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                <div class="social-links mt-4">
+                  <button href="" class="rounded-pill dribble">
+                    <i class="bi bi-dribbble"></i>
+                  </button>
+                  <button href="" class="rounded-pill whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                  </button>
+                  <button href="" class="rounded-pill behance">
+                    <i class="bi bi-behance"></i>
+                  </button>
+                </div>
+                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a
+                  tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus
+                  nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin.
+                  Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero
+                  arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+              </div>
+            </div>
+            <div class="heading px-2">
+              <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </div>
+            <div class="contact-form ms-3 mt-3 pb-4 px-2">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                Submit
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i
+                class="bi bi-x-circle-fill"></i></button>
+
+            <div class="modal-body px-4">
+              <div class="img">
+                <img src="images/currency-converter.png" class="img-fluid" alt="">
+              </div>
+              <div class="content mt-3">
+                <small>By Pawan Kumavat</small><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                <div class="social-links mt-4">
+                  <button href="" class="rounded-pill dribble">
+                    <i class="bi bi-dribbble"></i>
+                  </button>
+                  <button href="" class="rounded-pill whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                  </button>
+                  <button href="" class="rounded-pill behance">
+                    <i class="bi bi-behance"></i>
+                  </button>
+                </div>
+                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a
+                  tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus
+                  nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin.
+                  Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero
+                  arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+              </div>
+            </div>
+            <div class="heading px-2">
+              <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </div>
+            <div class="contact-form ms-3 mt-3 pb-4 px-2">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                Submit
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i
+                class="bi bi-x-circle-fill"></i></button>
+
+            <div class="modal-body px-4">
+              <div class="img">
+                <img src="images/dictionary.png" class="img-fluid" alt="">
+              </div>
+              <div class="content mt-3">
+                <small>By Pawan Kumavat</small><span class="text-muted ms-2 ms-md-0">Mar 8,2022</span>
+                <h4 class="card-title mt-3">Quis autem vea eum iure reprehenderit</h4>
+                <div class="social-links mt-4">
+                  <button href="" class="rounded-pill dribble">
+                    <i class="bi bi-dribbble"></i>
+                  </button>
+                  <button href="" class="rounded-pill whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                  </button>
+                  <button href="" class="rounded-pill behance">
+                    <i class="bi bi-behance"></i>
+                  </button>
+                </div>
+                <p class="text-muted mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor eros a
+                  tellus auctor, nec suscipit nunc dignissim. Ut suscipit gravida augue sed elementum. Sed sed luctus
+                  nisl. Donec scelerisque nisi in sodales mattis. Vestibulum suscipit odio ac enim blandit sollicitudin.
+                  Aliquam ultrices sem quis urna placerat interdum. Etiam rutrum, quam sagittis tristique mollis, libero
+                  arcu scelerisque erat, eget tincidunt eros diam quis nunc.</p>
+              </div>
+            </div>
+            <div class="heading px-2">
+              <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </div>
+            <div class="contact-form ms-3 mt-3 pb-4 px-2">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                Submit
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog section ends here -->
+
+  <!-- contact section starts -->
+  <section class="contact py-5" id="contact">
+    <div class="heading text-center">
+      <small>Get in Touch</small>
+      <h3>Any Questions? Feel Free to Contact</h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>Kitter para, Palashbari Gaibandha</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>+8801301-103482</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-send-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>tamim22160334@gmail.com</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-globe-americas"></i>
+          </div>
+          <div class="col-11">
+            <p>tamim.com</p>
+          </div>
+        </div>
+      </div>
+
+
+   <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+  <form id="contactForm" class="contact-form">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="name" placeholder="Name" required />
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="email" placeholder="E-mail" required />
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="mobile" placeholder="Mobile No." required />
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="message" placeholder="Message" rows="5" required></textarea>
+    </div>
+    <!-- Submit and Reset buttons -->
+    <div class="d-flex gap-3">
+      <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill bg-secondary">
+        Submit
+      </button>
+      <button type="reset" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill bg-secondary">
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mobile = document.getElementById('mobile').value;
+    const message = document.getElementById('message').value;
+
+    // Validate form fields
+    if (!name || !email || !mobile || !message) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
+
+    const bdPhoneRegex = /^(?:\+?88)?01[3-9]\d{8}$/;
+    
+    // Detailed operator validation
+    const operatorPrefixes = {
+      'GP': ['3', '5', '6', '7'],         // Grameenphone: 013, 015, 016, 017
+      'Robi': ['8', '6'],                 // Robi: 018, 016
+      'Airtel': ['9'],                    // Airtel: 019
+      'Banglalink': ['4', '9'],           // Banglalink: 014, 019
+      'Teletalk': ['5']                   // Teletalk: 015
+    };
+    
+    // Extract the last 11 digits (remove +88 or 88 if present)
+    const cleanNumber = mobile.replace(/^\+?88?/, '').substr(0, 11);
+    const prefix = cleanNumber.substr(0, 3);
+    
+    // Check if number matches any operator
+    let validOperator = false;
+    for (const operator in operatorPrefixes) {
+      if (operatorPrefixes[operator].includes(prefix[2])) {
+        validOperator = true;
+        break;
+      }
+    }
+    
+    if (!bdPhoneRegex.test(mobile) || !validOperator) {
+      alert('Please enter a valid Bangladesh mobile number from these operators:\n' +
+            'Grameenphone: 013,  017\n' +
+            'Robi: 016, 018\n' +
+            'Airtel: 019\n' +
+            'Banglalink: 014, 019\n' +
+            'Teletalk: 015\n\n' +
+            'Formats: 01XXXXXXXXX, +8801XXXXXXXXX, 8801XXXXXXXXX');
+      return;
+    }
+
+    // Gmail regex validation
+    const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    if (!gmailRegex.test(email)) {
+      alert('Please enter a valid Gmail address (e.g., example@gmail.com)');
+      return;
+    }
+
+    // Show success notification
+    alert(`Thank you, ${name}! Your message has been submitted.`);
+
+    // Reset the form
+    document.getElementById('contactForm').reset();
+  });
+</script>
+
+
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#about">About</a>
+      <div class="vr"></div>
+      <a href="#service">Service</a>
+      <div class="vr"></div>
+      <a href="#portfolio">Portfolio</a>
+      <div class="vr"></div>
+      <a href="#blog">Blog</a>
+      <div class="vr"></div>
+      <a href="#contact">Contact</a>
+    </div>
+
+
+    <!--Social Media link -->
+    <div class="social-links mt-5" data-aos="fade-up">
+      <!-- GitHub -->
+      <a href="https://github.com/tamimahmed11" class="rounded-pill github social-icon" target="_blank" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <!-- CodeChef -->
+      <a href="https://www.codechef.com/users/tamim_15" class="rounded-pill codechef social-icon" target="_blank"
+        title="CodeChef">
+        <i class="bi bi-code-square"></i>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/your-facebook-profile" class="rounded-pill facebook social-icon" target="_blank"
+        title="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/qr/RZCQZ4DOEY2AH1" class="rounded-pill whatsapp social-icon" target="_blank"
+        title="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/tamim-ahmed-738686300/" class="rounded-pill linkedin social-icon"
+        target="_blank" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/tamimahmed766/" class="rounded-pill instagram social-icon" target="_blank"
+        title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+
+    <!-- Add this CSS for consistent icon size and hover effects -->
+    <style>
+      /* Ensure all icons have the same size */
+    </style>
+
+    <!--Social link and icon stop-->
+    <hr class="text-muted my-4" />
+
+    <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+  </footer>
+  <!-- footer section ends here -->
+
+
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <!-- custom js file linking -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
